@@ -1,17 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taxi Booking App</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>
-<body>
+{% extends "partials/base.jinja" %}
+{% block title %}Taxi Booking App{% endblock %}
+<!-- Jumbotron header -->
+{% block PageTitle %}Taxi Booking App{% endblock %}
+
+{% block content %}
+    <div class="jumbotron text-center bg-white">
+        <div class="container">
+            <h1 class=" fw-semibold display-4">Welcome</h1>
+            <h1 class=" fw-semibold display-4">Username</h1>
+        </div>
+    </div>
+
+    <div class="container fw-semibold bg-white">
+        <a href="#" class="text-decoration-none">Search</a>
+        <hr>
+        <a href="#" class="text-decoration-none">Book a Ride</a>
+        <hr>
+        <a href="#" class="text-decoration-none">Notifications</a>
+        <hr>
+        <a href="#" class="text-decoration-none">User Profile</a>
+        <a href="#" class="text-decoration-none">Setting</a>
+        <hr>
+        <div class="text-center">
+            <a href="SpecificScreen.html" class="btn btn-secondary btn-lg text-body-secondary">Looking for a specific page?</a>
+        </div>
+    </div>
 
 
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+{% endblock %}
