@@ -2,7 +2,23 @@
 {% block title %}Specific Screen Page{% endblock %}
 
 {% block content %}
-    <div class="text-center style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem;">
-        <a href="#" class="btn btn-secondary btn-lg text-dark"></a>
+    <div class="container ">
+        <div class="input-group mb-3 text-center">
+  <span class="input-group-text bg-secondary" id="SearchScreen">
+      <img src="/img/search_icon.jpg" alt="Search Icon" height="25" width="25">
+  </span>
+            <input type="text" class="form-control bg-secondary" aria-label="Screen" aria-describedby="SearchScreen">
+        </div>
     </div>
+
+    <div class="container fw-semibold bg-white py-5">
+    <a href="#" class="text-decoration-none">Name of Screen</a>
+    <hr>
+    <a href="#" class="text-decoration-none">Name of Screen</a>
+    <hr>
+    <a href="#" class="text-decoration-none">Name of Screen</a>
+    <hr>
+    <a href="#" class="text-decoration-none">Name of Screen</a>
+</div>
+
 {% endblock %}
