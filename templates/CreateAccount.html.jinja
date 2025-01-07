@@ -5,37 +5,45 @@
 
 {% block content %}
 
-<div class="container fw-semibold bg-white">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form action="">
-                    <div class="mb-3">
-                        <label for="InputUsername" class="form-label text-primary">Username</label>
-                        <input type="text" class="form-label" id="InputUsername" placeholder="Enter your Username" required>
-                    </div>
-                    <hr>
-                    <div class="mb-3">
-                        <label for="InputPassword" class="form-label text-primary">Password</label>
-                        <input type="password" class="form-label" id="InputPassword" placeholder="Enter your Password" required>
-                    </div>
-                    <hr>
-                    <div class="mb-3">
-                        <label for="InputEmail" class="form-label text-primary">Email</label>
-                        <input type="email" class="form-label" id="InputEmail" placeholder="Enter your Email" required>
-                    </div>
-                    <hr>
-                    <a href="BirthCalendar.html" class="text-decoration-none">Date Of Birth</a>
-                    <hr>
-                    <a href="#" class="text-decoration-none">Payment Method</a>
-                    <hr>
-                    <div class="text-center">
-                        <a href="HomeScreen.html" class="btn btn-primary btn-lg">Create Account</a>
-                    </div>
-                </form>
+    <div class="container fw-semibold bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="InputUsername" class="form-label text-primary">Username</label>
+                            <input type="text" class="form-label" id="InputUsername" placeholder="Enter your Username"
+                                   required>
+                        </div>
+                        <hr>
+                        <div class="mb-3">
+                            <label for="InputPassword" class="form-label text-primary">Password</label>
+                            <input type="password" class="form-label" id="InputPassword"
+                                   placeholder="Enter your Password" required>
+                        </div>
+                        <hr>
+                        <div class="mb-3">
+                            <label for="InputEmail" class="form-label text-primary">Email</label>
+                            <input type="email" class="form-label" id="InputEmail" placeholder="Enter your Email"
+                                   required>
+                        </div>
+                        <hr>
+                        <a href="BirthCalendar.html" class="text-decoration-none">Date Of Birth
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill=""
+                                 class="bi bi-calendar" viewBox="0 0 16 16">
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                            </svg>
+                        </a>
+                        <hr>
+                        <a href="#" class="text-decoration-none">Payment Method</a>
+                        <hr>
+                        <div class="text-center">
+                            <a href="HomeScreen.html" class="btn btn-primary btn-lg">Create Account</a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 {% endblock %}
