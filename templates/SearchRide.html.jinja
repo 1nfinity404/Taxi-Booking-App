@@ -4,10 +4,46 @@
 {% block content %}
 
     <!-- Jumbotron header -->
-<div class="jumbotron text-center bg-white py-3">
-    <div class="container">
-        <h1 class=" fw-semibold display-4">Search</h1>
+    <div class="jumbotron text-center bg-white py-4">
+        <div class="container">
+            <h1 class=" fw-semibold display-4">Search</h1>
+        </div>
     </div>
-</div>
+    <ul class="nav nav-underline fw-semibold py-3 ">
+        <li class="nav-item">
+            <a class="nav-link" href="ViewMap.html">View Map</a>
+        </li>
+        <li class="nav-item dropdown justify-content-end">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+               aria-expanded="false">Sort By Choice</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sort By Rating</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Sort By Distance</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="align-middle my-5">
 
+        <table class="table text-center text-primary">
+            <thead>
+            <tr>
+                <th scope="col">Driver</th>
+                <th scope="col">Average Rating</th>
+                <th scope="col">Distance</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for taxi in Taxis %}
+                <tr>
+                    <td><a href="DriverInfo.html" class="text-decoration-none">{{ taxi.driver }}</a></td>
+                    <td>{{ taxi.rating }}</td>
+                    <td>{{ taxi.distance }}</td>
+                </tr>
+            {% endfor %}
+            <tbody>
+        </table>
+    </div>
 {% endblock %}

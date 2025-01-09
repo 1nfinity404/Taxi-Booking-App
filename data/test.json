@@ -1,25 +1,25 @@
 {
     "Username": "Username",
-    "orders": [
+    "Taxis": [
         {
-            "id": "1",
-            "date": "12/09/2024",
-            "value": "101"
+            "driver": "Name",
+            "rating": "<img src=\"...\" class=\"img-fluid\" alt=\"...\">",
+            "distance": "Distance"
         },
         {
-            "id": "2",
-            "date": "15/08/2024",
-            "value": "105"
+            "driver": "Name",
+            "rating": "<img src=\"...\" class=\"img-fluid\" alt=\"...\">",
+            "distance": "Distance"
         },
         {
-            "id": "3",
-            "date": "21/09/2023",
-            "value": "99"
+            "driver": "Name",
+            "rating": "<img src=\"...\" class=\"img-fluid\" alt=\"...\">",
+            "distance": "Distance"
         },
         {
-            "id": "4",
-            "date": "01/11/2023",
-            "value": "95"
+            "driver": "Name",
+            "rating": "<img src=\"...\" class=\"img-fluid\" alt=\"...\">",
+            "distance": "Distance"
         }
     ]
 }
