@@ -1,0 +1,35 @@
+{% extends "partials/NavbarLayout.jinja" %}
+{% block title %}Location Page{% endblock %}
+
+{% block content %}
+
+    <!-- Jumbotron header -->
+    <div class="jumbotron text-center bg-white py-3">
+        <div class="container">
+            <h1 class=" fw-semibold display-4">Enter Location</h1>
+        </div>
+    </div>
+
+    <div class="container fw-semibold bg-white py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="InputAddress" class="form-label text-primary">Address</label>
+                            <input type="text" class="form-control" id="InputAddress" placeholder="Enter your Address"
+                                   required>
+                        </div>
+                        <hr>
+                        <div class="mb-3">
+                            <label for="InputPostcode" class="form-label text-primary">Postcode</label>
+                            <input type="text" class="form-control" id="InputPostcode" placeholder="Enter your Postcode" required>
+                        </div>
+                        <hr>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
