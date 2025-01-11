@@ -44,13 +44,23 @@
         <div class="">
             <a href="BirthCalendar.html.jinja" class="text-decoration-none">Time for Collection</a>
         </div>
-        <a href="#" class="text-decoration-none">Ride-Share
-
-        </a>
+        <a href="#" class="text-decoration-none">Ride-Share</a>
+        <li class="nav-item dropdown justify-content-end">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+               aria-expanded="false">Anyone</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Anyone</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="RideShare.html">Choose Partner</a></li>
+            </ul>
+        </li>
         <hr>
         <a href="#" class="text-decoration-none">Estimated Cost
 
         </a>
         <hr>
+        {% include "partials/ConfirmBtn.jinja" %}
     </div>
 {% endblock %}

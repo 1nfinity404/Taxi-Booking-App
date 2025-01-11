@@ -1,0 +1,42 @@
+{% extends "partials/NavbarLayout.jinja" %}
+{% block title %}Ride-Share Page{% endblock %}
+
+{% block content %}
+
+    <!-- Jumbotron header -->
+    <div class="jumbotron text-center bg-white py-3">
+        <div class="container">
+            <h1 class=" fw-semibold display-4">Ride-Share</h1>
+        </div>
+    </div>
+
+    <div class="container fw-semibold bg-white py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="text-primary">Start a Ride-Share </p>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="InputUser" class="form-label text-primary">Address</label>
+                            <input type="text" class="form-label" id="InputUser" placeholder="Enter the Username"
+                                   required>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <a href="CurrentRide.html" class="btn btn-primary btn-lg">Send Invite</a>
+                        </div>
+                        <p class="text-primary py-3">Join a Ride-Share </p>
+                        <div class="mb-3">
+                            <label for="InputCode" class="form-label text-primary">Postcode</label>
+                            <input type="text" class="form-label" id="InputCode" placeholder="Enter the Code"
+                                   required>
+                        </div>
+                        <hr>
+                        {% include "partials/ConfirmBtn.jinja" %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
